@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="css/css.css" rel="stylesheet">
+    <title>{{ .Site.Title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="icon.jpg">
+    <meta name="Description" content="{{ .Site.Title }} - {{ .Site.Params.info.description }}"/>
+</head>
+
+<body>
+
+<div class="bbg">
+    <img id="bg" src="bg.jpg" />
+</div>
+
+<div class="head">
+    <div class="navlist">
+        <a href="view">归档</a>/
+        <a href="rss">RSS</a>
+    </div>
+    <h1 class="title"><a href="/">{{ .Site.Title }}</a></h1>
+    <div class="text">{{ .Site.Params.info.description }}</div>
+</div>

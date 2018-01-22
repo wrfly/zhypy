@@ -1,0 +1,23 @@
+
+<div class="foot">
+    <p>{{- with .Site.Copyright -}}
+            {{ . }}
+          {{- else -}}
+            {{- with .Site.Params.copyright -}}
+        
+              {{ with .startyear }}
+                {{ if lt ( int . ) now.Year }}
+                  {{ $.Scratch.Set "copyrightStartYear" . }}
+                {{ end }}
+              {{ end }}
+        
+              {{ .prefix | markdownify }} 
+                <span title="Copyright" style="cursor:pointer;">&copy;</span>&nbsp; 
+              {{ with ( $.Scratch.Get "copyrightStartYear" ) }}{{ . }}-{{ end }}{{ now.Year }} {{ or .holder $.Site.Title | markdownify }} {{ .suffix | markdownify }}
+            {{- end -}}
+        {{ end }}
+    </p>
+</div>
+
+</body>
+</html>    
