@@ -1,29 +1,13 @@
 {{ partial "header" . }}
 
-<div class="wrap">
-
-<div class="box article">
-    <div class="title"><a href="#">2018-01-16</a></div>
-        <div class="content">
-        <div class="text">
-            <p dir="ltr">曾经没有点点滴滴</p>
-        </div>                        
-
-        <div class="tags"><a href="">#胡言乱语</a><a href="">#日记</a></div>
-
-        <div class="link">
-            <a href="#" class="date">2018-01-16</a>  
-        </div>
-
-        </div>
-</div>
+{{ range sort .Paginator.Pages }}
+    {{ partial "artical/artical" . }}
+{{ end }}
 
 <div class="page">
     <a href="prev" class="prev">&lt;&lt;上一页</a><i></i>
     <a href="next" class="next">下一页&gt;&gt;</a>
 </div>
             
-            
-</div>
 
 {{ partial "footer" . }}

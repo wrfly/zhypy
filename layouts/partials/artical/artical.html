@@ -1,0 +1,21 @@
+
+<div class="box article">
+        <div class="title"><a href="#">{{ .Date.Format "2006-01-02" }}</a></div>
+        <div class="content">
+        <div class="text">
+            <p dir="ltr">{{ .Content }}</p>
+        </div>                        
+    
+        <div class="tags">
+            {{- range .Params.tags -}}
+            <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
+            {{ end -}}
+        </div>
+            
+        <div class="link">
+            <a href="#" class="date">{{ .Date.Format "2006-01-02 15:04:05" }}</a>  
+        </div>
+    
+        </div>
+</div>
+    

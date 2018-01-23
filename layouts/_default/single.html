@@ -1,3 +1,12 @@
-<p>
-    {{ .Content }}
-</p>
+{{ partial "header" . }}
+
+{{ partial "artical/artical" . }}
+
+<div class="page">
+    <a href="prev" class="prev">&lt;&lt;上一页</a><i></i>
+    <a href="next" class="next">下一页&gt;&gt;</a>
+</div>
+
+
+
+{{ partial "footer" . }}
