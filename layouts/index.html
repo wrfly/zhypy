@@ -1,12 +1,9 @@
 {{ partial "header" . }}
 
 {{ range sort .Paginator.Pages }}
-    {{ partial "artical/artical" . }}
+    {{ partial "article/article" . }}
 {{ end }}
 
-<div class="page">
-    <a href="{{ .Prev }}" class="prev">&lt;&lt;上一页</a><i></i>
-    <a href="{{ .Next }}" class="next">下一页&gt;&gt;</a>
-</div>
+{{ partial "extras/index-page" . }}
 
 {{ partial "footer" . }}

@@ -1,9 +1,6 @@
 {{ partial "header" . }}
 
-{{ range sort .Site.Pages }}
-    {{ if .Content }}
-        {{ partial "artical/brief" . }}
-    {{ end }}
-{{ end }}
+{{ partial "extras/term_cloud" . }}
+
 
 {{ partial "footer" . }}

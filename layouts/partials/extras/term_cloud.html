@@ -1,3 +1,6 @@
+<div class="box article">
+    <div class="content">
+
 <ul class='tags'>
         {{- if gt ( len .Data.Terms ) 0 -}}
           {{- $maxSize := 2.0 -}}
@@ -12,7 +15,7 @@
           {{- if gt $countSpread 0 -}}
             {{- $.Scratch.Set "sizeStep" ( div $sizeSpread $countSpread ) -}}
           {{- end -}}
-        
+
           {{- range .Data.Terms.Alphabetical -}}
             {{- $count := .Count -}}
             {{- $sizeStep := ( $.Scratch.Get "sizeStep" ) -}}
@@ -34,4 +37,7 @@
           </span>
         {{- end -}}
 </ul>
-        
+
+</div>
+
+</div>

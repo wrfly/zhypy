@@ -1,0 +1,13 @@
+<div class="page">
+        {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.URL }}" class="prev">&lt;&lt;上一页</a>
+        {{ else }}
+            <a class="prev">404</a>
+        {{ end }}
+        <i></i>
+        {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="next">下一页&gt;&gt;</a>
+        {{ else }}
+            <a class="next">404></a>
+        {{ end }}
+</div>

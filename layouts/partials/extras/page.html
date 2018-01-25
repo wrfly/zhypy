@@ -1,0 +1,13 @@
+<div class="page">
+        {{ if .Prev }}
+            <a href="{{ .Prev.Permalink }}" class="prev">&lt;&lt;上一页</a>
+        {{ else }}
+            <a class="prev">404</a>
+        {{ end }}
+        <i></i>
+        {{ if .Next }}
+        <a href="{{ .Next.Permalink }}" class="next" style="position: absolute">下一页&gt;&gt;</a>
+        {{ else }}
+            <a class="next">404</a>
+        {{ end }}
+</div>

@@ -1,19 +1,7 @@
 {{ partial "header" . }}
 
-{{ partial "artical/artical" . }}
+{{ partial "article/article" . }}
 
-<div class="page">
-    {{ if .Prev }}
-        <a href="{{ .Prev.Permalink }}" class="prev">&lt;&lt;上一页</a>
-    {{ else }}
-        <a><i>404</i></a>
-    {{ end }}
-    <i></i>
-    {{ if .Next }}
-    <a href="{{ .Next.Permalink }}" class="next">下一页&gt;&gt;</a>
-    {{ else }}
-        <a><i>404</i></a>
-    {{ end }}
-</div>
+{{ partial "extras/page" . }}
 
 {{ partial "footer" . }}
