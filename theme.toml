@@ -5,12 +5,12 @@ name = "zhypy"
 license = "MIT"
 licenselink = "https://github.com/wrfly/zhypy/blob/master/LICENSE.md"
 description = "A hugo theme copied from lofter"
-homepage = "https://zhypy.kfd.me/"
+homepage = "https://github.com/wrfly/zhypy"
 tags = []
 features = []
 min_version = "0.31"
 
 [author]
   name = "wrfly"
-  homepage = "https://zhypy.kfd.me"
+  homepage = "https://github.com/wrfly/zhypy"
 

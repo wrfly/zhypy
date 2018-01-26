@@ -1,0 +1,7 @@
+{{- if ne .Site.GoogleAnalytics "" }}
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{- .Site.GoogleAnalytics -}}', 'auto');
+    ga('send', 'pageview');
+</script>
+{{ end -}}
