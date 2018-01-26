@@ -1,0 +1,39 @@
+baseURL = "https://kfd.me"
+title = "只言片语"
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+
+theme = "zhypy"
+
+disqusShortname = "wrfly"
+googleAnalytics = "123"
+
+Paginate = 6
+preserveTaxonomyNames = true
+
+enableRobotsTXT = true 
+
+[params.info]
+description = "老来多健忘"
+title404 = "荒芜之地"
+
+[params.assets]
+favicon = "icon.jpeg"
+customCSS = ["css/css.css"]
+
+[params.copyright]
+prefix = ""
+holder = "Shaun"
+startYear = "2014"
+suffix = ""
+
+[params.settings]
+dateFormat = "2006-01-02"
+postDateFormat = "2006-01-02 15:04:05"
+
+[taxonomies]
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
