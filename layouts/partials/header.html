@@ -9,9 +9,9 @@
         {{- end -}}
     </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.assets.favicon }}">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}/{{ .Site.Params.assets.favicon }}">
     <meta name="Description" content="{{ .Site.Title }} - {{ .Site.Params.info.description }}"/>
-    <link href="{{ .Site.BaseURL }}css/css.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}/css/css.css" rel="stylesheet">
     <style type="text/css">
         .text a{color:#c33;}
         #infscr-loading{text-align:center;margin:auto;}
@@ -41,17 +41,17 @@
 </head>
 
 <div class="bbg">
-    <img id="bg" src="{{ .Site.BaseURL }}bg.jpg" />
+    <img id="bg" src="{{ .Site.BaseURL }}/bg.jpg" />
 </div>
 
 <body>
 
 <div class="head">
     <div class="navlist">
-        <a href="{{ .Site.BaseURL }}tags">Tags</a>/
-        <a href="{{ .Site.BaseURL }}index.xml">Rss</a>
+        <a href="{{ .Site.BaseURL }}/tags">Tags</a>/
+        <a href="{{ .Site.BaseURL }}/index.xml">Rss</a>
     </div>
-    <h1 class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <h1 class="title"><a href="{{ .Site.BaseURL }}/">{{ .Site.Title }}</a></h1>
     <div class="text">{{ .Site.Params.info.description }}</div>
 </div>
 
