@@ -4,6 +4,8 @@
     <title>
         {{- if eq .Page.Title .Site.Title -}}
         {{- .Site.Title -}}
+        {{- else if eq .Page.Title "_" -}}
+        {{- .Site.Title -}}
         {{- else -}}
         {{- .Page.Title }} - {{ .Site.Title -}}
         {{- end -}}

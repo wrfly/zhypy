@@ -1,0 +1,18 @@
+    <div class="box article">
+            {{- if ne .Title "_" -}}
+            <div class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+            {{- end -}}
+            <div class="content">
+            <div class="text">
+                {{ .Content }}
+            </div>
+            <div class="tags">
+                {{- range .Params.tags -}}
+                <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
+                {{- end -}}
+            </div>
+            <div class="link">
+                <a href="{{ .Permalink }}" class="date">{{ .Date.Format .Site.Params.settings.postDateFormat }}</a>  
+            </div>
+            </div>
+    </div>

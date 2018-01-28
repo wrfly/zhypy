@@ -1,7 +1,9 @@
 {{ partial "header" . }}
 
-  {{ range .Pages }}
-    {{ partial "article/article" . }}
-  {{ end }}
+{{ range sort .Paginator.Pages }}
+    {{- partial "article/article" . }}
+{{ end }}
+
+{{ partial "extras/index-page" . }}
 
 {{ partial "footer" . }}
